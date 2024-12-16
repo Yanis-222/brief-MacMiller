@@ -32,18 +32,18 @@ a:hover {
 
 /* Header */
 .header {
-    background-color: #1e1e1e; 
     color: #d1d1d1; 
     text-align: center;
     padding: 30px 10px;
-    border-bottom: 4px solid #555555; 
+    border-bottom: 4px solid #555555;
+    background-image: url("images/bg-header.webp"); 
 }
 
 .header__titre {
     font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #a9a9a9; 
+    color: #160808; 
 }
 
 .header__image {
@@ -81,6 +81,10 @@ a:hover {
     text-decoration: none;
     color: inherit;
     display: inline-block;
+}
+
+main {
+    background-image: url("");
 }
 
 /* Section Biographie */
