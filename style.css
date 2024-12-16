@@ -1,0 +1,251 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style global */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #d1d1d1; 
+    background-color: #333333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #a9a9a9; 
+}
+
+a:hover {
+    color: #6e6e6e; 
+}
+
+/* Header */
+.header {
+    background-color: #1e1e1e; 
+    color: #d1d1d1; 
+    text-align: center;
+    padding: 30px 10px;
+    border-bottom: 4px solid #555555; 
+}
+
+.header__titre {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #a9a9a9; 
+}
+
+.header__image {
+    max-width: 120px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+    border: 3px solid #d1d1d1; 
+}
+
+.header__navigation {
+    margin-top: 20px;
+}
+
+.header__navigation__liste {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header__navigation__liste--item {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555555; 
+    border-radius: 50px;
+    color: #d1d1d1;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.header__navigation__liste--item:hover {
+    background-color: #6e6e6e;
+    transform: scale(1.05);
+}
+
+.header__navigation__liste--item a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+/* Section Biographie */
+.Bio {
+    padding: 30px;
+    background-color: #444444; 
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 800px;
+}
+
+.Bio__titre {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #a9a9a9; 
+}
+
+.Bio__paragraphe {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #d1d1d1;
+}
+
+.Bio__liste {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.Bio__liste--item {
+    margin-bottom: 10px;
+    color: #d1d1d1; 
+}
+
+/* Section Discographie */
+.Disco {
+    padding: 30px;
+    background-color: #444444; 
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+.Disco__titre {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #a9a9a9; 
+}
+
+.Disco__albstudio, .Disco__alblive, .Disco__mixtape {
+    font-size: 1.8rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #d1d1d1; 
+}
+
+.Disco__liste--item {
+    margin-bottom: 10px;
+    color: #d1d1d1;
+}
+
+/* Section Galerie */
+.gallery {
+    padding: 30px;
+    background-color: #444444;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 800px;
+}
+
+.gallery__titre {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #a9a9a9; 
+}
+
+.gallery__img {
+    max-width: 180px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.gallery__img:hover {
+    transform: scale(1.1);
+}
+
+/* Section Contact */
+.Contact {
+    padding: 30px;
+    background-color: #444444; 
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+.Contact__titre {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #a9a9a9; 
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: #d1d1d1; 
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #777777; 
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #555555; 
+    color: #d1d1d1; 
+}
+
+form button {
+    background-color: #6e6e6e;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #444444; 
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e; 
+    color: #d1d1d1; 
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 20px;
+    border-top: 4px solid #555555; 
+}
+
+footer p {
+    margin: 0;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+footer nav ul li a {
+    color: #d1d1d1;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #6e6e6e; 
+}
