@@ -44,6 +44,9 @@ html {
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    position: absolute;
+    top: 10px;
+    left: 1450px;
 }
 
 .dark-mode-btn:hover {
@@ -54,22 +57,13 @@ html {
 /* Thème Clair */
 .light-theme {
     background-color: #f0f0f0;
-    color: #030303;
+    color: black; 
 }
 
-.light-theme a {
-    color: #000000;
+.light-theme footer {
+    color: white;
+    background-color: #1e1e1e;
 }
-
-.light-theme .header, 
-.light-theme .Bio, 
-.light-theme .Disco, 
-.light-theme .Contact, 
-.light-theme .gallery {
-    background-color: #ffffff;
-    color: #050505;
-}
-
 
 /* Style global */
 body {
@@ -80,6 +74,7 @@ body {
     color: #d1d1d1; 
     background-color: #333333;
 }
+
 
 h1, h2, h3 {
     margin: 0;
