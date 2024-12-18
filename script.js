@@ -1,3 +1,4 @@
+// dark mode
 
 const toggleButton = document.getElementById('dark-mode-toggle');
 const body = document.body;
@@ -19,4 +20,40 @@ toggleButton.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
         toggleButton.textContent = '☀︎';
     }
+});
+
+
+// affichage image en grand 
+
+document.querySelectorAll('img').forEach(img => {
+    
+    img.addEventListener('click', () => {
+
+        const fullscreenDiv = document.createElement('div');
+        fullscreenDiv.style.position = 'fixed';
+        fullscreenDiv.style.top = '0';
+        fullscreenDiv.style.left = '0';
+        fullscreenDiv.style.width = '100%';
+        fullscreenDiv.style.height = '100%';
+        fullscreenDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+        fullscreenDiv.style.display = 'flex';
+        fullscreenDiv.style.justifyContent = 'center';
+        fullscreenDiv.style.alignItems = 'center';
+
+
+    
+        const fullscreenImg = img.cloneNode();
+        fullscreenImg.style.maxWidth = '90%';
+        fullscreenImg.style.maxHeight = '90%';
+
+
+        fullscreenDiv.appendChild(fullscreenImg);
+
+
+        document.body.appendChild(fullscreenDiv);
+
+        fullscreenDiv.addEventListener('click', () => {
+            document.body.removeChild(fullscreenDiv);
+        });
+    });
 });

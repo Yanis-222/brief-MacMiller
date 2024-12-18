@@ -211,6 +211,22 @@ a:hover {
     border-radius: 10px;
 }
 
+.Bio__conteneur {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.Bio__contenu {
+    flex: 1;
+}
+
+.Bio__image {
+    max-width: 200px;
+    height: auto; 
+    border-radius: 10px; 
+}
 
 .Bio__paragraphe {
     margin-bottom: 20px;
@@ -401,4 +417,82 @@ footer nav ul li a {
 
 footer nav ul li a:hover {
     color: #6e6e6e; 
+}
+
+
+
+
+/* Telephone */
+
+@media only screen and (max-width: 768px) {
+    /* Global adjustments */
+    body {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .header {
+        padding: 15px 5px;
+        background-size: cover; 
+    }
+
+    .header__titre {
+        font-size: 1.8rem;
+    }
+
+    .header__image {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .header__navigation__liste {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__navigation__liste--item {
+        padding: 8px 15px;
+    }
+
+    .dark-mode-btn {
+        left: auto;
+        top: 5px;
+        right: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Section Biographie */
+    .Bio, .Disco, .gallery, .Contact {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .Bio__titre, .Disco__titre, .gallery__titre, .Contact__titre {
+        font-size: 1.8rem;
+    }
+
+    .Bio__paragraphe {
+        font-size: 1rem;
+    }
+
+    /* Section Galerie */
+    .gallery__img {
+        max-width: 100px;
+        margin: 5px;
+    }
+
+    /* Contact form */
+    form input, form textarea, form button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    form button {
+        animation: none;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem;
+    }
 }
