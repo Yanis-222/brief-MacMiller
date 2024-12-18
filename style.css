@@ -34,6 +34,42 @@ html {
     }
 }
 
+/* Bouton Dark Mode */
+.dark-mode-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dark-mode-btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Thème Clair */
+.light-theme {
+    background-color: #f0f0f0;
+    color: #030303;
+}
+
+.light-theme a {
+    color: #000000;
+}
+
+.light-theme .header, 
+.light-theme .Bio, 
+.light-theme .Disco, 
+.light-theme .Contact, 
+.light-theme .gallery {
+    background-color: #ffffff;
+    color: #050505;
+}
+
 
 /* Style global */
 body {
@@ -83,7 +119,7 @@ a:hover {
     border-bottom: 4px solid #555555;
     background-image: url("images/bg-header.webp");
     background-repeat: repeat-x; 
-    animation: moveBackground 10s linear infinite; 
+    animation: moveBackground 50s linear infinite; 
 }
 
 .header__titre {
